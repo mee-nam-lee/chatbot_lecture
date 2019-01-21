@@ -1,11 +1,11 @@
-Lab100 - Chatbot Overview
+Lab100 - 챗봇 둘러보기 및 Intent / Dialog 테스트
 =======
 
 이 랩에서는 MasterBot이라는 이름의 금융 업무를 수행하는 챗봇을 살펴볼 것입니다. 
 
 아래의 파일이 있는지 확인 해 주세요. 
 
-- [MasterBot Import 파일](labfiles/MasterBot_Korean/MasterBot_kor.zip)
+- [MasterBot Import 파일](labfiles/MasterBot_Korean/MasterBot_kor_wo_comp.zip)
 
 **Bot console로 들어가기**
 =======
