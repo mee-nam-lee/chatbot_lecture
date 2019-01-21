@@ -1,0 +1,6 @@
+{ 
+  "name": "OracleMobileAPIImpl",
+  "description": "oracleMobile - for standalone debugging", 
+  "version": "1.0", 
+  "main": "OracleMobileAPIImpl.js"
+}

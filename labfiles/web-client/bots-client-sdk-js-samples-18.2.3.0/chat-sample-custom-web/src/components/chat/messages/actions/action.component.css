@@ -1,0 +1,58 @@
+.card-actions{
+    border-top: 1px solid #e6e5eb;
+}
+.message-actions,
+.card-actions {
+    background-color: white;
+    margin: 10px -17px -9px;
+    z-index: 2;
+    position: relative;
+    border-radius: 0 0 5px 5px;
+}
+.message-actions a,
+.card-actions a{
+    border-bottom: 1px solid #e6e5eb;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    padding: 12px;
+}
+
+.right .message-actions a{
+    border-bottom-color: #158ffe;
+}
+.message-actions a:hover,
+.card-actions a:hover{
+    text-decoration: none;
+}
+.message-actions a:last-child,
+.card-actions a:last-child{
+    border-bottom: 0;
+    margin-bottom: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+
+.message .message-global-actions{
+    margin: 7px;
+}
+
+.message-global-actions a{
+    display: inline-block;
+    border: 1px solid #e6e5eb;
+    border-radius: 4px;
+    margin: .4rem .2rem;
+    padding: 1px 13px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.card-actions a.disabled,
+.message-actions a.disabled,
+.message-global-actions a.disabled{
+    cursor: default;
+    background-color: #f8f8f8;
+    pointer-events: none;
+}

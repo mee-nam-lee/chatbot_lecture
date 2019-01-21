@@ -1,0 +1,20 @@
+{
+  "name": "bankingcc",
+  "version": "1.1.2",
+  "description": "Bots MCS-based component service",
+  "main": "bankingcc.js",
+  "repository": {},
+  "license": "ISC",
+  "dependencies": {
+    "joi": "^14.3.1",
+    "log4js": "^3.0.6"
+  },
+  "oracleMobile": {
+    "dependencies": {
+      "apis": {
+        "/mobile/custom/BankingApi": "1.0"
+      },
+      "connectors": {}
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.widget{
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    position: fixed;
+    z-index: 10;
+    display: block;
+    width: 350px;
+    height: 450px;
+    /*background-color: #fff;*/
+    /*border: 1px solid #ddd;*/
+    /*border-radius: 4px;*/
+    /*box-shadow(0 1px 1px rgba(0,0,0,.05));*/
+    /*box-sizing: border-box;*/
+    /*-webkit-tap-highlight-color: transparent;*/
+    /*-webkit-touch-callout: none;*/
+    /*-webkit-transition: height .5s linear;*/
+    /*-moz-transition: height .5s linear;*/
+    /*-ms-transition: height .5s linear;*/
+    /*-o-transition: height .5s linear;*/
+    /*transition: height .5s linear;*/
+}

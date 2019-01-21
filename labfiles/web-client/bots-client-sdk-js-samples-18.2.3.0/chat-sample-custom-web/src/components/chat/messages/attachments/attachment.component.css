@@ -1,0 +1,4 @@
+.attachment-image,
+.attachment-video{width: 100%;}
+.attachment-file{word-break: break-all;}
+.attachment-audio{width: 190px;}/* TODO: set by javascript */

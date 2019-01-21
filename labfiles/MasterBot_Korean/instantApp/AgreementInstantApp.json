@@ -1,0 +1,502 @@
+{
+   "actionList": [
+      {
+         "elementTrigger": "signature_1",
+         "enabled": true,
+         "eventTrigger": "valueChanged",
+         "parameters": [
+            {
+               "name": "name",
+               "value": "{singleLineInput_1}"
+            },
+            {
+               "name": "phone",
+               "value": "{singleLineInput_4}"
+            },
+            {
+               "name": "item",
+               "value": "{selectMenu_1}"
+            }
+         ],
+         "trigger": "change",
+         "type": "exitToBot"
+      },
+      {
+         "elementTrigger": "signature_1",
+         "enabled": true,
+         "eventTrigger": "valueChanged",
+         "pane": "PANE_2",
+         "trigger": "change",
+         "type": "activatePane"
+      }
+   ],
+   "authList": [
+   ],
+   "chatbox": {
+      "active": true,
+      "build": 16,
+      "builder": {
+         "editCount": 134
+      },
+      "code": "AgreementInstantApp",
+      "id": 1,
+      "trashed": false
+   },
+   "displayList": [
+      {
+         "allowDismiss": false,
+         "elementList": [
+            {
+               "actionList": [
+               ],
+               "detail": {
+                  "generatedHtml": "<h2>금융상품 가입 약관</h2>\n",
+                  "text": "## 금융상품 가입 약관\n",
+                  "type": "markdown"
+               },
+               "id": "label_1",
+               "initiallyEnabled": true,
+               "initiallyVisible": true,
+               "innerStyles": {
+                  "backgroundColor": "#FFFFFF",
+                  "borderColor": "#333",
+                  "borderRadius": "0px",
+                  "borderStyle": "solid",
+                  "borderWidth": "0px",
+                  "color": "#333333",
+                  "elementClass": "",
+                  "fontSize": "13px",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "labelClass": "",
+                  "textAlign": "left"
+               },
+               "outerStyles": {
+                  "marginBottom": "12px",
+                  "marginLeft": "0",
+                  "marginRight": "0",
+                  "marginTop": "0",
+                  "paddingBottom": "0",
+                  "paddingLeft": "0",
+                  "paddingRight": "0",
+                  "paddingTop": "0",
+                  "width": "100%"
+               },
+               "since": 0,
+               "tooltip": ""
+            },
+            {
+               "actionList": [
+               ],
+               "detail": {
+                  "agentCanEdit": false,
+                  "agentMasked": false,
+                  "customerCanEdit": true,
+                  "elementValidation": {
+                     "maxLength": 0,
+                     "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                     "minLength": 0,
+                     "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                     "regex": "[가-힣]*",
+                     "regexErrorMessage": "여권상의 한글 이름을 사용 해 주세요. ",
+                     "required": true,
+                     "requiredErrorMessage": "필수 항목 입니다.",
+                     "snippet": "",
+                     "validateMaxLength": false,
+                     "validateMinLength": false,
+                     "validateRegex": false,
+                     "validateSnippet": false
+                  },
+                  "label": "성함",
+                  "labelInline": true,
+                  "maxLength": 256,
+                  "placeholder": "",
+                  "required": false,
+                  "type": "singleLineInput"
+               },
+               "id": "singleLineInput_1",
+               "initiallyEnabled": true,
+               "initiallyVisible": true,
+               "innerStyles": {
+                  "backgroundColor": "#FFFFFF",
+                  "borderColor": "#ccc",
+                  "borderRadius": "4px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "color": "#333333",
+                  "elementClass": "",
+                  "float": "left",
+                  "fontSize": "13px",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "labelClass": "",
+                  "textAlign": "left"
+               },
+               "outerStyles": {
+                  "marginBottom": "12px",
+                  "marginLeft": "0",
+                  "marginRight": "0",
+                  "marginTop": "0",
+                  "paddingBottom": "0",
+                  "paddingLeft": "0",
+                  "paddingRight": "0",
+                  "paddingTop": "0",
+                  "width": "100%"
+               },
+               "since": 0,
+               "tooltip": ""
+            },
+            {
+               "actionList": [
+               ],
+               "detail": {
+                  "agentCanEdit": false,
+                  "agentMasked": false,
+                  "customerCanEdit": true,
+                  "elementValidation": {
+                     "maxLength": 0,
+                     "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                     "minLength": 0,
+                     "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                     "regex": "\\d{3}-\\d{3,4}-\\d{4}",
+                     "regexErrorMessage": "전화번호 형식으로 입력 해 주세요.",
+                     "required": true,
+                     "requiredErrorMessage": "필수 항목 입니다.",
+                     "snippet": "",
+                     "validateMaxLength": false,
+                     "validateMinLength": false,
+                     "validateRegex": false,
+                     "validateSnippet": false
+                  },
+                  "label": "전화번호",
+                  "labelInline": true,
+                  "maxLength": 256,
+                  "placeholder": "010-0000-0000",
+                  "required": false,
+                  "type": "singleLineInput"
+               },
+               "id": "singleLineInput_4",
+               "initiallyEnabled": true,
+               "initiallyVisible": true,
+               "innerStyles": {
+                  "backgroundColor": "#FFFFFF",
+                  "borderColor": "#ccc",
+                  "borderRadius": "4px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "color": "#333333",
+                  "elementClass": "",
+                  "float": "left",
+                  "fontSize": "13px",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "labelClass": "",
+                  "textAlign": "left"
+               },
+               "outerStyles": {
+                  "marginBottom": "12px",
+                  "marginLeft": "0",
+                  "marginRight": "0",
+                  "marginTop": "0",
+                  "paddingBottom": "0",
+                  "paddingLeft": "0",
+                  "paddingRight": "0",
+                  "paddingTop": "0",
+                  "width": "100%"
+               },
+               "since": 0,
+               "tooltip": ""
+            },
+            {
+               "actionList": [
+               ],
+               "detail": {
+                  "agentCanEdit": false,
+                  "agentMasked": false,
+                  "customerCanEdit": true,
+                  "elementValidation": {
+                     "maxLength": 0,
+                     "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                     "minLength": 0,
+                     "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                     "regex": "",
+                     "regexErrorMessage": "",
+                     "required": true,
+                     "requiredErrorMessage": "필수 항목 입니다.",
+                     "snippet": "",
+                     "validateMaxLength": false,
+                     "validateMinLength": false,
+                     "validateRegex": false,
+                     "validateSnippet": false
+                  },
+                  "label": "금융 상품",
+                  "labelInline": true,
+                  "loadOptionsFromAction": false,
+                  "options": [
+                     {
+                        "label": "ONE 놀이터적금",
+                        "since": 0,
+                        "value": "ONE 놀이터적금"
+                     },
+                     {
+                        "label": "W효도적금",
+                        "since": 0,
+                        "value": "W효도적금"
+                     },
+                     {
+                        "label": "1석 7조통장",
+                        "since": 0,
+                        "value": "1석 7조통장"
+                     },
+                     {
+                        "label": "주택청약종합저축",
+                        "since": 0,
+                        "value": "주택청약종합저축"
+                     },
+                     {
+                        "label": "외화정기예금",
+                        "since": 0,
+                        "value": "외화정기예금"
+                     },
+                     {
+                        "label": "무배당 연금저축",
+                        "since": 0,
+                        "value": "무배당 연금저축"
+                     }
+                  ],
+                  "optionsCaption": "원하시는 금융상품을 선택 해 주세요.",
+                  "required": false,
+                  "type": "select"
+               },
+               "id": "selectMenu_1",
+               "initiallyEnabled": true,
+               "initiallyVisible": true,
+               "innerStyles": {
+                  "backgroundColor": "#FFFFFF",
+                  "borderColor": "#ccc",
+                  "borderRadius": "4px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "color": "#333333",
+                  "elementClass": "",
+                  "fontSize": "13px",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "labelClass": "",
+                  "textAlign": "left"
+               },
+               "outerStyles": {
+                  "marginBottom": "12px",
+                  "marginLeft": "0",
+                  "marginRight": "0",
+                  "marginTop": "0",
+                  "paddingBottom": "0",
+                  "paddingLeft": "0",
+                  "paddingRight": "0",
+                  "paddingTop": "0",
+                  "width": "100%"
+               },
+               "since": 0,
+               "tooltip": ""
+            },
+            {
+               "actionList": [
+               ],
+               "detail": {
+                  "agentCanEdit": false,
+                  "agentMasked": false,
+                  "customerCanEdit": true,
+                  "elementValidation": {
+                     "maxLength": 0,
+                     "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                     "minLength": 0,
+                     "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                     "regex": "",
+                     "regexErrorMessage": "",
+                     "required": false,
+                     "requiredErrorMessage": "This is required",
+                     "snippet": "",
+                     "validateMaxLength": false,
+                     "validateMinLength": false,
+                     "validateRegex": false,
+                     "validateSnippet": false
+                  },
+                  "initialPage": 1,
+                  "required": false,
+                  "src": "/upload/s3?k=public%2FO315%2Fschema%2F3c-2%2FO7Er%2FLr-4TBJdJsxCHNChaAHy7jIaOjBlk7ik6C1B3z6BVIMwgx8kOI0FFsIKs8ycXh1TT2wU_0Ctow8EQQ%3D%3D%2Finstant_app_pdf%2528demo_usage_only%2529.pdf",
+                  "type": "pdf"
+               },
+               "id": "pdf_1",
+               "initiallyEnabled": true,
+               "initiallyVisible": true,
+               "innerStyles": {
+                  "backgroundColor": "#FFFFFF",
+                  "borderColor": "#333",
+                  "borderRadius": "0px",
+                  "borderStyle": "solid",
+                  "borderWidth": "0px",
+                  "color": "#333333",
+                  "elementClass": "",
+                  "fontSize": "13px",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "labelClass": "",
+                  "textAlign": "left",
+                  "width": "90%"
+               },
+               "outerStyles": {
+                  "marginBottom": "12px",
+                  "marginLeft": "0",
+                  "marginRight": "0",
+                  "marginTop": "0",
+                  "paddingBottom": "0",
+                  "paddingLeft": "0",
+                  "paddingRight": "0",
+                  "paddingTop": "0",
+                  "textAlign": "center",
+                  "width": "100%"
+               },
+               "since": 0,
+               "tooltip": ""
+            },
+            {
+               "actionList": [
+               ],
+               "detail": {
+                  "agentCanEdit": false,
+                  "agentMasked": false,
+                  "confirmButton": "제출",
+                  "customerCanEdit": true,
+                  "elementValidation": {
+                     "maxLength": 0,
+                     "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                     "minLength": 0,
+                     "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                     "regex": "",
+                     "regexErrorMessage": "",
+                     "required": false,
+                     "requiredErrorMessage": "This is required",
+                     "snippet": "",
+                     "validateMaxLength": false,
+                     "validateMinLength": false,
+                     "validateRegex": false,
+                     "validateSnippet": false
+                  },
+                  "label": "동의 하시면 사인해 주세요",
+                  "labelInline": false,
+                  "required": false,
+                  "type": "signature"
+               },
+               "id": "signature_1",
+               "initiallyEnabled": true,
+               "initiallyVisible": true,
+               "innerStyles": {
+                  "backgroundColor": "rgb(225, 237, 251)",
+                  "borderColor": "#333",
+                  "borderRadius": "0px",
+                  "borderStyle": "solid",
+                  "borderWidth": "0px",
+                  "color": "#333",
+                  "elementClass": "",
+                  "fontSize": "13px",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "labelClass": "",
+                  "textAlign": "left"
+               },
+               "outerStyles": {
+                  "marginBottom": "12px",
+                  "marginLeft": "0",
+                  "marginRight": "0",
+                  "marginTop": "0",
+                  "paddingBottom": "0",
+                  "paddingLeft": "0",
+                  "paddingRight": "0",
+                  "paddingTop": "0",
+                  "width": "100%"
+               },
+               "since": 0,
+               "tooltip": ""
+            }
+         ],
+         "id": "PANE_1",
+         "validation": {
+            "asYouGo": true,
+            "errorMessage": "Please see errors above before continuing.",
+            "snippet": "",
+            "usingSnippet": false
+         }
+      },
+      {
+         "allowDismiss": false,
+         "elementList": [
+            {
+               "actionList": [
+               ],
+               "detail": {
+                  "generatedHtml": "<h2>감사합니다.</h2>\n",
+                  "text": "\n\n## 감사합니다.",
+                  "type": "markdown"
+               },
+               "id": "label_2",
+               "initiallyEnabled": true,
+               "initiallyVisible": true,
+               "innerStyles": {
+                  "backgroundColor": "#FFFFFF",
+                  "borderColor": "#333",
+                  "borderRadius": "0px",
+                  "borderStyle": "solid",
+                  "borderWidth": "0px",
+                  "color": "#333333",
+                  "elementClass": "",
+                  "fontSize": "13px",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "labelClass": "",
+                  "textAlign": "center"
+               },
+               "outerStyles": {
+                  "marginBottom": "12px",
+                  "marginLeft": "0",
+                  "marginRight": "0",
+                  "marginTop": "0",
+                  "paddingBottom": "0",
+                  "paddingLeft": "0",
+                  "paddingRight": "0",
+                  "paddingTop": "0",
+                  "width": "100%"
+               },
+               "since": 0,
+               "tooltip": ""
+            }
+         ],
+         "id": "PANE_2",
+         "validation": {
+            "asYouGo": true,
+            "errorMessage": "Please see errors above before continuing.",
+            "snippet": "",
+            "usingSnippet": false
+         }
+      }
+   ],
+   "externalDataList": [
+   ],
+   "general": {
+      "author": "Unknown",
+      "created": "Tue Jul 24 2018",
+      "icon": "",
+      "inviteMessageList": [
+         "Click to join this Instant App {link}"
+      ],
+      "name": "AgreementInstantApp"
+   },
+   "localizationList": [
+      {
+         "key": "locale1",
+         "stringMap": ""
+      }
+   ],
+   "snippetList": [
+   ],
+   "version": 6
+}

@@ -1,0 +1,370 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset129 AppleSDGothicNeo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 metadata:\
+  platformVersion: "1.0"\
+main: true\
+name: "FinancialBotMainFlow"\
+context:\
+  variables:\
+    accountType: "AccountType"\
+    toAccount: "ToAccount"\
+    spendingCategory: "TrackSpendingCategory"\
+    paymentAmount: "CURRENCY"\
+    location : "string"\
+    invest : "string"\
+    iResult: "nlpresult"\
+states:\
+  intent:\
+    component: "System.Intent"\
+    properties:\
+      variable: "iResult"\
+      confidenceThreshold: 0.4\
+    transitions:\
+      actions:\
+        Balances: "startBalances"\
+        Send Money: "startPayments"\
+        Track Spending: "startTrackSpending"\
+        InvestPlan: "startPlan"\
+        NearBy: "SendLocation"\
+        unresolvedIntent: "unresolved"\
+        \
+  startPlan:\
+    component: "InvestPlan"\
+    transitions: \{\}\
+  startApp:\
+    component: "System.Interactive"\
+    properties:\
+      prompt: "
+\f1 \'b0\'a1\'c0\'d4\'c0\'bb
+\f0  
+\f1 \'c7\'cf\'bd\'c3\'b7\'c1\'b8\'e9
+\f0  
+\f1 \'be\'c6\'b7\'a1\'c0\'c7
+\f0  
+\f1 \'b8\'b5\'c5\'a9\'b8\'a6
+\f0  
+\f1 \'b4\'ad\'b7\'af\'c1\'d6\'bc\'bc\'bf\'e4
+\f0 ."\
+      sourceVariableList: \
+      variable: "invest"\
+      id: "AgreementInstantApp"\
+    transitions: \{\}      \
+  instantAppOutput:\
+    component: "System.Output"\
+    properties:\
+      text: "'$\{invest.value.name\}'
+\f1 \'b4\'d4\'c0\'ba
+\f0  '$\{invest.value.item\}' 
+\f1 \'bb\'f3\'c7\'b0\'c0\'bb
+\f0  
+\f1 \'b0\'a1\'c0\'d4\'c7\'cf\'bc\'cc\'bd\'c0\'b4\'cf\'b4\'d9
+\f0 ."\
+    transitions:\
+      return: "instantAppOutput"\
+\
+  SendLocation:\
+    component: "System.CommonResponse"\
+    properties:\
+      processUserMessage: true\
+      metadata:\
+        responseItems:\
+        - type: "text"\
+          text: "
+\f1 \'be\'c6\'b7\'a1
+\f0  
+\f1 \'b9\'f6\'c6\'b0\'c0\'bb
+\f0  
+\f1 \'b4\'ad\'b7\'af\'bc\'ad
+\f0  
+\f1 \'c0\'a7\'c4\'a1\'b8\'a6
+\f0  
+\f1 \'b0\'f8\'c0\'af\'c7\'d8
+\f0  
+\f1 \'c1\'d6\'bc\'bc\'bf\'e4
+\f0 ."\
+          separateBubbles: true\
+          name: "SendLocation"\
+        globalActions:\
+        - label: "
+\f1 \'c0\'a7\'c4\'a1
+\f0  
+\f1 \'b0\'f8\'c0\'af
+\f0 "\
+          type: "location"\
+          name: "Send Location"\
+      variable: "location"\
+    transitions:\
+      actions:\
+        locationSent: "ShowLocation"\
+  \
+  ShowLocation:\
+    component: "System.CommonResponse"\
+    properties:\
+      processUserMessage: true\
+      metadata:\
+        responseItems:\
+        - type: "attachment" \
+          attachmentType: "image" \
+          attachmentUrl: "https://simg.pstatic.net/static.map/image?version=1.1&center=127.0406213,37.4990903&level=11&w=700&h=323&baselayer=default&markers=type,default2,127.0406213,37.4990903"          \
+        - type: "text"\
+          text: "
+\f1 \'b0\'a1\'c0\'e5
+\f0  
+\f1 \'b0\'a1\'b1\'ee\'bf\'ee
+\f0  
+\f1 \'c1\'a1\'c0\'ba
+\f0  
+\f1 \'bf\'aa\'bb\'ef\'c1\'a1\'c0\'d4\'b4\'cf\'b4\'d9
+\f0 ."\
+          separateBubbles: true\
+          name: "LocInfo"          \
+        globalActions:\
+        - label: "
+\f1 \'c3\'ca\'b1\'e2
+\f0  
+\f1 \'b8\'de\'b4\'ba\'b7\'ce
+\f0 "\
+          type: "postback"\
+          payload:\
+            action: "menu"\
+          name: "feature Menu"\
+    transitions:\
+      actions:\
+        menu: "FeatureMenu"\
+\
+  FeatureMenu:\
+    component: "System.CommonResponse"\
+    properties:\
+      metadata:\
+        responseItems:\
+        - type: "text"\
+          text: "
+\f1 \'be\'c8\'b3\'e7\'c7\'cf\'bc\'bc\'bf\'e4
+\f0 , $\{profile.firstName\}
+\f1 \'b4\'d4
+\f0 ! 
+\f1 \'c1\'a6\'b0\'a1
+\f0  
+\f1 \'b9\'ab\'be\'f9\'c0\'bb
+\f0  
+\f1 \'b5\'b5\'bf\'cd\'b5\'e5\'b8\'b1\'b1\'ee\'bf\'e4
+\f0 ?"\
+          name: "
+\f1 \'b9\'e6\'b9\'ae\'c0\'da
+\f0 "\
+          separateBubbles: true\
+          actions:\
+          - label: "
+\f1 \'c0\'dc\'b0\'ed\'c1\'b6\'c8\'b8
+\f0 "\
+            type: "postback"\
+            payload:\
+              action: "startBalances"\
+            name: "balances"\
+          - label: "
+\f1 \'bc\'db\'b1\'dd\'c7\'cf\'b1\'e2
+\f0 "\
+            type: "postback"\
+            payload:\
+              action: "startPayments"\
+            name: "payments"\
+          - label: "
+\f1 \'c1\'f6\'c3\'e2
+\f0  
+\f1 \'b3\'bb\'bf\'aa
+\f0  
+\f1 \'c8\'ae\'c0\'ce\'c7\'cf\'b1\'e2
+\f0 "\
+            type: "postback"\
+            payload:\
+              action: "startTrackSpending"\
+            name: "trackSpending"\
+          - label: "
+\f1 \'b0\'a1\'b1\'ee\'bf\'ee
+\f0  
+\f1 \'bf\'b5\'be\'f7\'c1\'a1
+\f0  
+\f1 \'c3\'a3\'b1\'e2
+\f0 "\
+            type: "postback"\
+            payload:\
+              action: "SendLocation"\
+            name: "sendlocation"            \
+      processUserMessage: true\
+    transitions:\
+      actions:\
+        startBalances: "startBalances"\
+        startPayments: "startPayments"      \
+        startTrackSpending: "startTrackSpending"\
+        SendLocation: "SendLocation"\
+        textReceived: "intent"\
+        \
+  startBalances:\
+    component: "System.SetVariable"\
+    properties:\
+      variable: "accountType"\
+      value: "$\{iResult.value.entityMatches['AccountType'][0]\}"\
+    transitions: \{\}\
+  askBalancesAccountType:\
+    component: "System.List"\
+    properties:\
+      options: "$\{accountType.type.enumValues\}"\
+      prompt: "
+\f1 \'be\'ee\'b6\'b2
+\f0  
+\f1 \'b0\'e8\'c1\'c2\'c0\'c7
+\f0  
+\f1 \'c0\'dc\'b0\'ed\'b8\'a6
+\f0  
+\f1 \'ba\'b8\'b0\'ed
+\f0  
+\f1 \'bd\'cd\'c0\'b8\'bd\'c5\'b0\'a1\'bf\'e4
+\f0 ?"\
+      variable: "accountType"\
+      maxPrompts: 2\
+    transitions:\
+      actions:\
+        cancel: "intent"    \
+  printBalance:\
+    component: "BalanceRetrieval"\
+    properties:\
+      accountType: "$\{accountType.value\}"\
+    transitions:\
+      return: "printBalance"\
+      \
+  startPayments:\
+    component: "System.SetVariable"\
+    properties:\
+      variable: "accountType"\
+      value: "$\{iResult.value.entityMatches['AccountType'][0]\}"\
+    transitions: \{\}\
+  resolveToAccount:\
+    component: "System.SetVariable"\
+    properties:\
+      variable: "toAccount"\
+      value: "$\{iResult.value.entityMatches['ToAccount'][0]\}"\
+    transitions: \{\}\
+  resolvePaymentAmount:\
+    component: "System.SetVariable"\
+    properties:\
+      variable: "paymentAmount"\
+      value: "$\{iResult.value.entityMatches['CURRENCY'][0]\}"\
+    transitions: \{\}\
+  askFromAccountType:\
+    component: "System.List"\
+    properties:\
+      options: "$\{accountType.type.enumValues\}"\
+      prompt: "
+\f1 \'be\'ee\'b6\'b2
+\f0  
+\f1 \'b0\'e8\'c1\'c2\'b7\'ce
+\f0  
+\f1 \'ba\'ce\'c5\'cd
+\f0  
+\f1 \'c3\'e2\'b1\'dd\'c7\'d2\'b1\'ee\'bf\'e4
+\f0 ?"\
+      variable: "accountType"\
+      maxPrompts: 2      \
+    transitions:\
+      actions:\
+        cancel: "intent"       \
+    \
+  askToAccount:\
+    component: "System.List"\
+    properties:\
+      options: "$\{toAccount.type.enumValues\}"\
+      prompt: "
+\f1 \'be\'ee\'b6\'b2
+\f0  
+\f1 \'b0\'e8\'c1\'c2\'b7\'ce
+\f0  
+\f1 \'bc\'db\'b1\'dd
+\f0  
+\f1 \'c7\'d2\'b1\'ee\'bf\'e4
+\f0 ?"\
+      variable: "toAccount"\
+      maxPrompts: 2            \
+    transitions: \
+      actions:\
+        cancel: "intent"       \
+  askPaymentAmount:\
+    component: "System.Text"\
+    properties:\
+      prompt: "
+\f1 \'be\'f3\'b8\'b6\'b8\'a6
+\f0  
+\f1 \'bc\'db\'b1\'dd
+\f0  
+\f1 \'c7\'d2\'b1\'ee\'bf\'e4
+\f0 ?"\
+      variable: "paymentAmount"\
+      maxPrompts: 2            \
+    transitions: \
+      actions:\
+        cancel: "intent"   \
+  doPayment:\
+    component: "Payments"\
+    properties:\
+      fromAccountType: "$\{accountType.value\}"\
+      toAccount: "$\{toAccount.value\}"\
+      amount: "$\{paymentAmount.value.totalCurrency\}"\
+    transitions:\
+      return: "doPayment"\
+      \
+  startTrackSpending:\
+    component: "System.SetVariable"\
+    properties:\
+      variable: "spendingCategory"\
+      value: "$\{iResult.value.entityMatches['TrackSpendingCategory'][0]\}"\
+    transitions: \{\}\
+  askCategory:\
+    component: "System.List"\
+    properties:\
+      options: "$\{spendingCategory.type.enumValues\}"\
+      prompt: "
+\f1 \'be\'ee\'b6\'b2
+\f0  
+\f1 \'c7\'d7\'b8\'f1\'c0\'c7
+\f0  
+\f1 \'c1\'f6\'c3\'e2\'b3\'bb\'bf\'aa\'c0\'cc
+\f0  
+\f1 \'b1\'c3\'b1\'dd\'c7\'cf\'bd\'c5\'b0\'a1\'bf\'e4
+\f0 ?"\
+      variable: "spendingCategory"\
+      maxPrompts: 2            \
+    transitions: \
+      actions:\
+        cancel: "intent"    \
+  showSpending:\
+    component: "TrackSpending"\
+    properties:\
+      spendingCategory: "$\{spendingCategory.value\}"\
+      date: "$\{iResult.value.entityMatches['DATE'][0]\}"\
+      durationStart: "$\{iResult.value.entityMatches['DURATION'][0].startDate\}"\
+      durationEnd: "$\{iResult.value.entityMatches['DURATION'][0].endDate\}"\
+    transitions:\
+      return: "showSpending"      \
+      \
+  unresolved:\
+    component: "System.Output"\
+    properties:\
+      text: "
+\f1 \'b9\'ab\'bd\'bc
+\f0  
+\f1 \'b8\'bb\'be\'b8\'c0\'ce\'c1\'f6
+\f0  
+\f1 \'b8\'f0\'b8\'a3\'b0\'da\'bd\'c0\'b4\'cf\'b4\'d9
+\f0 . 
+\f1 \'b4\'d9\'bd\'c3
+\f0  
+\f1 \'b8\'bb\'be\'b8\'c7\'d8\'c1\'d6\'bc\'bc\'bf\'e4
+\f0 "\
+    transitions: \
+      return: "unresolved"\
+      \
+      }
