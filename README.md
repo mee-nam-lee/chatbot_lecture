@@ -13,7 +13,7 @@ Training 과정을 통해 더욱 정교한 대화가 가능한 챗봇으로 진�
 Oracle Cloud 계정이 없다면 무료로 제공되는 Trial 계정을 신청하세요
 * [Trial 계정 신청하기](http://www.oracloud.kr/post/oracle_cloud_trial_universal/)
 
-본 과정에서는 Oracle Digital Assitant의 접속 정보가 제공될 것입니다. 제공되는 정보를 이용하여 Digital Assitant Cloud에 연결하세요.
+**본 과정에서는 Oracle Digital Assitant의 접속 정보가 제공될 것입니다. 제공되는 정보를 이용하여 Digital Assitant Cloud에 연결하세요.**
 
 
 # Chatbot-Workshop Lab 자료
