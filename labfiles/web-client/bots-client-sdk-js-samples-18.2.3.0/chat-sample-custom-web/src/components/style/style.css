@@ -1,7 +1,0 @@
-
-.button:active,.button:focus,
-.input:active,.input:focus{
-    outline: none;
-}
-
-.clear{clear: both;}
