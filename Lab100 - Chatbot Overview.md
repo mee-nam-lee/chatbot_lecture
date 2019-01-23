@@ -8,10 +8,6 @@ Lab100 - 금융봇을 이용하여 챗봇 기본 기능 익히기
 
 이 랩에서는 MasterBot이라는 이름의 금융 업무를 수행하는 챗봇을 살펴볼 것입니다. 
 
-아래의 파일이 있는지 확인 해 주세요. 
-
-- [MasterBot Import 파일](labfiles/MasterBot_Korean/MasterBot_kor_wo_comp.zip)
-
 **Bot console로 들어가기**
 =======
 제공되는 Oracle Digital Assistant의 접속 정보를 확인하여 콘솔에 접속합니다.
@@ -45,7 +41,7 @@ Lab100 - 금융봇을 이용하여 챗봇 기본 기능 익히기
 
  방금 생성한 본인의 MasterBot의 이름을 클릭하거나 아래와 같이 **Edit** 메뉴를 클릭하여 Bot의 편집 화면으로 이동합니다.
 
- ![](images/006_Edit_MasterBot.png)
+ ![](images/06_Edit_MasterBot.png)
 
 이 봇은 이미 플로우가 작성되어 있는 봇입니다. 이봇을 테스트 허기 위해서 이미 등록되어 있는 각 Intent의 샘플 Utterance를 Train 시켜야 합니다. 상단의 Train 버튼을 클릭하여 등록된 샘플 Utterance를 학습 시킵니다. 
 
@@ -55,7 +51,7 @@ Lab100 - 금융봇을 이용하여 챗봇 기본 기능 익히기
 
  ![](images/08_Train_window.png)
 
-Train이 완료되었으면 화면에 알림이 뜨고 다시한면 상단의 **Train** 버튼을 클릭해 보면 **Trainer Ht**의 체크 아이콘이 **초록색**으로 변경되어 있음을 볼 수 있습니다. 이는 학습이 완료되었다는 뜻 입니다.
+Train이 완료되었으면 화면에 알림이 뜨고 다시 한번 상단의 **Train** 버튼을 클릭해 보면 **Trainer Ht**의 체크 아이콘이 **초록색**으로 변경되어 있음을 볼 수 있습니다. 이는 학습이 완료되었다는 뜻 입니다.
 Train 팝업창 상단의 **X** 버튼을 클릭하여 Train 윈도우를 닫습니다.
 
 ![](images/09_after_train.png)
@@ -121,9 +117,7 @@ Test UI의 **Reset** 버튼을 클릭하여 창을 clear 합니다.
 * 송금 계좌 
 * 금액
 
-Send Money Test Image
-
-![](media/15153914320994/Screen%20Shot%202018-01-08%20at%205.30.07%20PM.png)
+![](images/Send%20Money%20Test.png)
 
 
 송금을 위한 3개의 Entity를 첫 사용자 Utterance에 포함하여 대화를 수행할 수 있습니다. 첫 문장에서 송금을 위한 모든 정보 (Entity)가 추출된다면 Bot은 추가적인 질문을 하지 않고 바로 송금을 시행합니다. 아래와 같이 입력하여 테스트 해
@@ -132,10 +126,12 @@ Send Money Test Image
 * 카드에서 출금해서 팀장님께 $50 보내줘 
 * 내 예금 계좌에서 $200불 엄마한테 보내줘
 
+ ![](images/Send%20Money2.png)
 
-** Send Money 2 이미지 **
+과정을 완료하였습니다.
 
- ![Screen Shot 2018-01-08 at 5.31.56
-P](media/15153914320994/Screen%20Shot%202018-01-08%20at%205.31.56%20PM.png)
+## 참고 자료 
 
-Lab100 과정을 완료하였습니다.
+금융봇(MasterBot)이 등록되어 있지 않다면 아래 파일을 다운 받아 Import 하면 됩니다.
+
+- [MasterBot Import 파일](labfiles/MasterBot_Korean/MasterBot_kor_wo_comp.zip)
