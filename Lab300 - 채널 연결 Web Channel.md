@@ -44,4 +44,7 @@ Text Box에 자신의 PizzaBot에서 만든 **Web** 채널의 **App Id**를 복�
 피자봇에서 구현했던 4개의 Intent들을 차례로 테스트 해보면 됩니다.
 ![](images/channel/06_chat.png)
 
+## 사용환경 정리 
+생성한 PizzaBot_{SEQ}를 이전 lab에서 처럼 삭제합니다.
 
+과정을 완료하였습니다.

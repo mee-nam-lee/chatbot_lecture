@@ -11,6 +11,11 @@ Lab100 - 금융봇을 이용하여 챗봇 기본 기능 익히기
 **Bot console로 들어가기**
 =======
 제공되는 Oracle Digital Assistant의 접속 정보를 확인하여 콘솔에 접속합니다.
+로그인 후에 다음과 같은 페이지가 나오면 왼편 상탄의 아이콘을 클릭하여 메뉴바를 펼칩니다.
+
+![](images/00_after_login.png)
+
+아래와 같이 왼편 메뉴에서 **Bots** 메뉴를 클릭합니다.
 
 ![](images/01_bot_first_page.png)
 
@@ -127,6 +132,11 @@ Test UI의 **Reset** 버튼을 클릭하여 창을 clear 합니다.
 * 내 예금 계좌에서 $200불 엄마한테 보내줘
 
  ![](images/Send%20Money2.png)
+
+## 사용환경 정리 
+생성한 MasterBot_{SEQ}를 다음과 같이 삭제 합니다.
+
+ ![](images/99_delete_bot.png)
 
 과정을 완료하였습니다.
 
