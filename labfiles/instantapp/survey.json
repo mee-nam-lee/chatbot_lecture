@@ -1,0 +1,972 @@
+{
+    "actionList": [
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "OneTwoThree",
+                "radioButtons_1"
+            ],
+            "trigger": "value",
+            "triggerValue": "0",
+            "type": "showElements"
+        },
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "FourFive"
+            ],
+            "trigger": "value",
+            "triggerValue": "0",
+            "type": "hideElements"
+        },
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "radioButtons_1",
+                "OneTwoThree"
+            ],
+            "trigger": "value",
+            "triggerValue": "1",
+            "type": "showElements"
+        },
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "FourFive"
+            ],
+            "trigger": "value",
+            "triggerValue": "1",
+            "type": "hideElements"
+        },
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "OneTwoThree",
+                "radioButtons_1"
+            ],
+            "trigger": "value",
+            "triggerValue": "2",
+            "type": "showElements"
+        },
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "FourFive"
+            ],
+            "trigger": "value",
+            "triggerValue": "2",
+            "type": "hideElements"
+        },
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "OneTwoThree"
+            ],
+            "trigger": "value",
+            "triggerValue": "3",
+            "type": "showElements"
+        },
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "FourFive",
+                "radioButtons_1"
+            ],
+            "trigger": "value",
+            "triggerValue": "3",
+            "type": "hideElements"
+        },
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "FourFive"
+            ],
+            "trigger": "value",
+            "triggerValue": "4",
+            "type": "showElements"
+        },
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "OneTwoThree",
+                "radioButtons_1"
+            ],
+            "trigger": "value",
+            "triggerValue": "4",
+            "type": "hideElements"
+        },
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "FourFive"
+            ],
+            "trigger": "value",
+            "triggerValue": "5",
+            "type": "showElements"
+        },
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "OneTwoThree",
+                "radioButtons_1"
+            ],
+            "trigger": "value",
+            "triggerValue": "5",
+            "type": "hideElements"
+        },
+        {
+            "elementTrigger": "radioButtons_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "pickList_1"
+            ],
+            "trigger": "value",
+            "triggerValue": "yes",
+            "type": "showElements"
+        },
+        {
+            "elementTrigger": "pickList_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "email_1"
+            ],
+            "trigger": "contains",
+            "triggerValue": "email",
+            "type": "showElements"
+        },
+        {
+            "elementTrigger": "pickList_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "email_1"
+            ],
+            "trigger": "notcontains",
+            "triggerValue": "email",
+            "type": "hideElements"
+        },
+        {
+            "elementTrigger": "button_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "parameters": [
+                {
+                    "name": "result",
+                    "value": "설문이 완료되었습니다."
+                }
+            ],
+            "trigger": "paneValid",
+            "type": "exitToBot"
+        },
+        {
+            "elementTrigger": "radioButtons_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "pickList_1",
+                "email_1"
+            ],
+            "trigger": "value",
+            "triggerValue": "no",
+            "type": "hideElements"
+        },
+        {
+            "elementTrigger": "pickList_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "phone_1"
+            ],
+            "trigger": "contains",
+            "triggerValue": "Phone",
+            "type": "showElements"
+        },
+        {
+            "elementTrigger": "pickList_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "phone_1"
+            ],
+            "trigger": "notcontains",
+            "triggerValue": "Phone",
+            "type": "hideElements"
+        },
+        {
+            "elementTrigger": "button_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "pane": "PANE_2",
+            "trigger": "paneValid",
+            "type": "activatePane"
+        }
+    ],
+    "chatbox": {
+        "active": true,
+        "apiId": "survey",
+        "build": 9,
+        "builder": {
+            "editCount": 33
+        },
+        "id": 1,
+        "tagList": [
+        ],
+        "trashed": false
+    },
+    "displayList": [
+        {
+            "allowDismiss": false,
+            "elementList": [
+                {
+                    "actionList": [
+                    ],
+                    "detail": {
+                        "src": "/chatbox2/upload?k=public%2FO958%2Fschema%2F8Nw-%2F0-yA%2FEa-w79thpHSYnyoYt1knMZP06dJydC2g-xt9MDtpI7u54OYRYTFk8UwjxgnhxDVJY25oVXnmOYGfpQ%3D%3D%2Flogo.jpg",
+                        "type": "image"
+                    },
+                    "id": "image_1",
+                    "initiallyEnabled": true,
+                    "initiallyVisible": true,
+                    "innerStyles": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderColor": "#333",
+                        "borderRadius": "0px",
+                        "borderStyle": "solid",
+                        "borderWidth": "0px",
+                        "color": "#333333",
+                        "elementClass": "",
+                        "fontSize": "13px",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                        "labelClass": "",
+                        "textAlign": "left",
+                        "width": "90%"
+                    },
+                    "outerStyles": {
+                        "marginBottom": "12px",
+                        "marginLeft": "0",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "paddingBottom": "0",
+                        "paddingLeft": "0",
+                        "paddingRight": "0",
+                        "paddingTop": "0",
+                        "width": "100%"
+                    },
+                    "since": 0,
+                    "tooltip": ""
+                },
+                {
+                    "actionList": [
+                    ],
+                    "detail": {
+                        "agentCanEdit": false,
+                        "agentMasked": false,
+                        "customerCanEdit": true,
+                        "elementValidation": {
+                            "maxLength": 0,
+                            "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                            "minLength": 0,
+                            "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                            "regex": "",
+                            "regexErrorMessage": "",
+                            "required": false,
+                            "requiredErrorMessage": "This is required",
+                            "snippet": "",
+                            "validateMaxLength": false,
+                            "validateMinLength": false,
+                            "validateRegex": false,
+                            "validateSnippet": false
+                        },
+                        "icons": [
+                            "fa-star",
+                            "fa-star",
+                            "fa-star",
+                            "fa-star",
+                            "fa-star"
+                        ],
+                        "label": "서비스 만족도를 평가해 주세요",
+                        "labelInline": false,
+                        "leftIcon": "fa-frown-o",
+                        "required": false,
+                        "rightIcon": "fa-smile-o",
+                        "type": "stars"
+                    },
+                    "id": "starRating_1",
+                    "initiallyEnabled": true,
+                    "initiallyVisible": true,
+                    "innerStyles": {
+                        "backgroundColor": "rgba(255, 255, 255, 0)",
+                        "borderColor": "#333",
+                        "borderRadius": "0px",
+                        "borderStyle": "solid",
+                        "borderWidth": "0px",
+                        "color": "#333333",
+                        "elementClass": "",
+                        "fontSize": "20px",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                        "labelClass": "",
+                        "textAlign": "center"
+                    },
+                    "outerStyles": {
+                        "marginBottom": "12px",
+                        "marginLeft": "0",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "paddingBottom": "0",
+                        "paddingLeft": "0",
+                        "paddingRight": "0",
+                        "paddingTop": "0",
+                        "width": "100%"
+                    },
+                    "since": 0,
+                    "tooltip": ""
+                },
+                {
+                    "actionList": [
+                    ],
+                    "detail": {
+                        "agentCanEdit": false,
+                        "agentMasked": false,
+                        "customerCanEdit": true,
+                        "elementValidation": {
+                            "maxLength": 0,
+                            "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                            "minLength": 0,
+                            "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                            "regex": "",
+                            "regexErrorMessage": "",
+                            "required": false,
+                            "requiredErrorMessage": "This is required",
+                            "snippet": "",
+                            "validateMaxLength": false,
+                            "validateMinLength": false,
+                            "validateRegex": false,
+                            "validateSnippet": false
+                        },
+                        "errorMessage": "An error has occurred",
+                        "label": "서비스 개선을 위한 의견이 있으시면 적어 주세요",
+                        "maxLength": 1000,
+                        "placeholder": "",
+                        "required": false,
+                        "rows": 5,
+                        "type": "multiLineInput"
+                    },
+                    "id": "OneTwoThree",
+                    "initiallyEnabled": true,
+                    "initiallyVisible": false,
+                    "innerStyles": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderColor": "#ccc",
+                        "borderRadius": "4px",
+                        "borderStyle": "solid",
+                        "borderWidth": "1px",
+                        "color": "#333333",
+                        "elementClass": "",
+                        "fontSize": "13px",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                        "labelClass": "",
+                        "textAlign": "left"
+                    },
+                    "outerStyles": {
+                        "marginBottom": "12px",
+                        "marginLeft": "0",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "paddingBottom": "0",
+                        "paddingLeft": "0",
+                        "paddingRight": "0",
+                        "paddingTop": "0",
+                        "width": "100%"
+                    },
+                    "since": 0,
+                    "tooltip": ""
+                },
+                {
+                    "actionList": [
+                    ],
+                    "detail": {
+                        "agentCanEdit": false,
+                        "agentMasked": false,
+                        "customerCanEdit": true,
+                        "elementValidation": {
+                            "maxLength": 0,
+                            "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                            "minLength": 0,
+                            "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                            "regex": "",
+                            "regexErrorMessage": "",
+                            "required": false,
+                            "requiredErrorMessage": "This is required",
+                            "snippet": "",
+                            "validateMaxLength": false,
+                            "validateMinLength": false,
+                            "validateRegex": false,
+                            "validateSnippet": false
+                        },
+                        "errorMessage": "An error has occurred",
+                        "label": "좋았던 서비스는 무엇이었나요? ",
+                        "maxLength": 1000,
+                        "placeholder": "",
+                        "required": false,
+                        "rows": 5,
+                        "type": "multiLineInput"
+                    },
+                    "id": "FourFive",
+                    "initiallyEnabled": true,
+                    "initiallyVisible": false,
+                    "innerStyles": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderColor": "#ccc",
+                        "borderRadius": "4px",
+                        "borderStyle": "solid",
+                        "borderWidth": "1px",
+                        "color": "#333333",
+                        "elementClass": "",
+                        "fontSize": "13px",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                        "labelClass": "",
+                        "textAlign": "left"
+                    },
+                    "outerStyles": {
+                        "marginBottom": "12px",
+                        "marginLeft": "0",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "paddingBottom": "0",
+                        "paddingLeft": "0",
+                        "paddingRight": "0",
+                        "paddingTop": "0",
+                        "width": "100%"
+                    },
+                    "since": 0,
+                    "tooltip": ""
+                },
+                {
+                    "actionList": [
+                    ],
+                    "detail": {
+                        "agentCanEdit": false,
+                        "agentMasked": false,
+                        "customerCanEdit": true,
+                        "elementValidation": {
+                            "maxLength": 0,
+                            "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                            "minLength": 0,
+                            "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                            "regex": "",
+                            "regexErrorMessage": "",
+                            "required": false,
+                            "requiredErrorMessage": "This is required",
+                            "snippet": "",
+                            "validateMaxLength": false,
+                            "validateMinLength": false,
+                            "validateRegex": false,
+                            "validateSnippet": false
+                        },
+                        "inline": false,
+                        "label": "서비스 불만 사항 접수를 위한  고객 서비스팀과의 연결이 필요하신가요?",
+                        "loadOptionsFromAction": false,
+                        "options": [
+                            {
+                                "label": "Yes",
+                                "since": 0,
+                                "value": "yes"
+                            },
+                            {
+                                "label": "No",
+                                "since": 0,
+                                "value": "no"
+                            }
+                        ],
+                        "required": false,
+                        "selectedIcon": "fa-check-circle",
+                        "type": "radio",
+                        "unselectedIcon": "fa-circle-o"
+                    },
+                    "id": "radioButtons_1",
+                    "initiallyEnabled": true,
+                    "initiallyVisible": false,
+                    "innerStyles": {
+                        "backgroundColor": "rgba(255, 255, 255, 0)",
+                        "borderColor": "#333",
+                        "borderRadius": "0px",
+                        "borderStyle": "solid",
+                        "borderWidth": "0px",
+                        "color": "#333333",
+                        "elementClass": "",
+                        "fontSize": "13px",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                        "labelClass": "",
+                        "textAlign": "left"
+                    },
+                    "outerStyles": {
+                        "marginBottom": "12px",
+                        "marginLeft": "0",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "paddingBottom": "0",
+                        "paddingLeft": "0",
+                        "paddingRight": "0",
+                        "paddingTop": "0",
+                        "width": "100%"
+                    },
+                    "since": 0,
+                    "tooltip": ""
+                },
+                {
+                    "actionList": [
+                    ],
+                    "detail": {
+                        "agentCanEdit": false,
+                        "agentMasked": false,
+                        "allVisible": true,
+                        "customerCanEdit": true,
+                        "elementValidation": {
+                            "maxLength": 0,
+                            "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                            "minLength": 0,
+                            "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                            "regex": "",
+                            "regexErrorMessage": "",
+                            "required": false,
+                            "requiredErrorMessage": "This is required",
+                            "snippet": "",
+                            "validateMaxLength": false,
+                            "validateMinLength": false,
+                            "validateRegex": false,
+                            "validateSnippet": false
+                        },
+                        "inline": false,
+                        "label": "편하신 연락 방법은 무엇인가요?",
+                        "loadOptionsFromAction": false,
+                        "options": [
+                            {
+                                "initiallyChecked": false,
+                                "label": "Phone",
+                                "since": 0,
+                                "value": "Phone"
+                            },
+                            {
+                                "initiallyChecked": false,
+                                "label": "Email",
+                                "since": 0,
+                                "value": "email"
+                            }
+                        ],
+                        "required": false,
+                        "rows": 2,
+                        "type": "picklist"
+                    },
+                    "id": "pickList_1",
+                    "initiallyEnabled": true,
+                    "initiallyVisible": false,
+                    "innerStyles": {
+                        "backgroundColor": "rgba(255, 255, 255, 0)",
+                        "borderColor": "#E7E7E7",
+                        "borderRadius": "0px",
+                        "borderStyle": "",
+                        "borderWidth": "",
+                        "color": "#333333",
+                        "elementClass": "",
+                        "fontSize": "13px",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                        "labelClass": "",
+                        "textAlign": "left"
+                    },
+                    "outerStyles": {
+                        "marginBottom": "12px",
+                        "marginLeft": "0",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "paddingBottom": "0",
+                        "paddingLeft": "0",
+                        "paddingRight": "0",
+                        "paddingTop": "0",
+                        "width": "100%"
+                    },
+                    "since": 0,
+                    "tooltip": ""
+                },
+                {
+                    "actionList": [
+                    ],
+                    "detail": {
+                        "agentCanEdit": false,
+                        "agentMasked": false,
+                        "customerCanEdit": true,
+                        "elementValidation": {
+                            "maxLength": 0,
+                            "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                            "minLength": 0,
+                            "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                            "regex": "",
+                            "regexErrorMessage": "",
+                            "required": false,
+                            "requiredErrorMessage": "This is required",
+                            "snippet": "",
+                            "validateMaxLength": false,
+                            "validateMinLength": false,
+                            "validateRegex": false,
+                            "validateSnippet": false
+                        },
+                        "label": "Phone Number",
+                        "labelInline": false,
+                        "required": false,
+                        "type": "phone"
+                    },
+                    "id": "phone_1",
+                    "initiallyEnabled": true,
+                    "initiallyVisible": false,
+                    "innerStyles": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderColor": "#ccc",
+                        "borderRadius": "4px",
+                        "borderStyle": "solid",
+                        "borderWidth": "1px",
+                        "color": "#333333",
+                        "elementClass": "",
+                        "fontSize": "13px",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                        "labelClass": "",
+                        "textAlign": "left"
+                    },
+                    "outerStyles": {
+                        "marginBottom": "12px",
+                        "marginLeft": "0",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "paddingBottom": "0",
+                        "paddingLeft": "0",
+                        "paddingRight": "0",
+                        "paddingTop": "0",
+                        "width": "100%"
+                    },
+                    "since": 0,
+                    "tooltip": ""
+                },
+                {
+                    "actionList": [
+                    ],
+                    "detail": {
+                        "agentCanEdit": false,
+                        "agentMasked": false,
+                        "customerCanEdit": true,
+                        "elementValidation": {
+                            "maxLength": 0,
+                            "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                            "minLength": 0,
+                            "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                            "regex": "",
+                            "regexErrorMessage": "",
+                            "required": false,
+                            "requiredErrorMessage": "This is required",
+                            "snippet": "",
+                            "validateMaxLength": false,
+                            "validateMinLength": false,
+                            "validateRegex": false,
+                            "validateSnippet": false
+                        },
+                        "label": "Email Address",
+                        "labelInline": false,
+                        "maxLength": 80,
+                        "placeholder": "",
+                        "required": false,
+                        "type": "email"
+                    },
+                    "id": "email_1",
+                    "initiallyEnabled": true,
+                    "initiallyVisible": false,
+                    "innerStyles": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderColor": "#ccc",
+                        "borderRadius": "4px",
+                        "borderStyle": "solid",
+                        "borderWidth": "1px",
+                        "color": "#333333",
+                        "elementClass": "",
+                        "fontSize": "13px",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                        "labelClass": "",
+                        "textAlign": "left"
+                    },
+                    "outerStyles": {
+                        "marginBottom": "12px",
+                        "marginLeft": "0",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "paddingBottom": "0",
+                        "paddingLeft": "0",
+                        "paddingRight": "0",
+                        "paddingTop": "0",
+                        "width": "100%"
+                    },
+                    "since": 0,
+                    "tooltip": ""
+                },
+                {
+                    "actionList": [
+                    ],
+                    "detail": {
+                        "agentCanEdit": false,
+                        "agentMasked": false,
+                        "customerCanEdit": true,
+                        "elementValidation": {
+                            "maxLength": 0,
+                            "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                            "minLength": 0,
+                            "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                            "regex": "",
+                            "regexErrorMessage": "",
+                            "required": false,
+                            "requiredErrorMessage": "This is required",
+                            "snippet": "",
+                            "validateMaxLength": false,
+                            "validateMinLength": false,
+                            "validateRegex": false,
+                            "validateSnippet": false
+                        },
+                        "errorMessage": "An error has occurred",
+                        "label": "다른 추가적인 사항이 있으신가요?",
+                        "maxLength": 1000,
+                        "placeholder": "",
+                        "required": false,
+                        "rows": 5,
+                        "type": "multiLineInput"
+                    },
+                    "id": "multiLineInput_1",
+                    "initiallyEnabled": true,
+                    "initiallyVisible": true,
+                    "innerStyles": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderColor": "#ccc",
+                        "borderRadius": "4px",
+                        "borderStyle": "solid",
+                        "borderWidth": "1px",
+                        "color": "#333333",
+                        "elementClass": "",
+                        "fontSize": "13px",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                        "labelClass": "",
+                        "textAlign": "left"
+                    },
+                    "outerStyles": {
+                        "marginBottom": "12px",
+                        "marginLeft": "0",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "paddingBottom": "0",
+                        "paddingLeft": "0",
+                        "paddingRight": "0",
+                        "paddingTop": "0",
+                        "width": "100%"
+                    },
+                    "since": 0,
+                    "tooltip": ""
+                },
+                {
+                    "actionList": [
+                    ],
+                    "detail": {
+                        "agentCanEdit": false,
+                        "agentMasked": false,
+                        "buttonClass": "InteractiveButton",
+                        "customerCanEdit": true,
+                        "elementValidation": {
+                            "maxLength": 0,
+                            "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                            "minLength": 0,
+                            "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                            "regex": "",
+                            "regexErrorMessage": "",
+                            "required": false,
+                            "requiredErrorMessage": "This is required",
+                            "snippet": "",
+                            "validateMaxLength": false,
+                            "validateMinLength": false,
+                            "validateRegex": false,
+                            "validateSnippet": false
+                        },
+                        "label": "설문 완료",
+                        "required": false,
+                        "type": "button"
+                    },
+                    "id": "button_1",
+                    "initiallyEnabled": true,
+                    "initiallyVisible": true,
+                    "innerStyles": {
+                        "backgroundColor": "#93b547",
+                        "borderColor": "#333",
+                        "borderRadius": "3px",
+                        "borderStyle": "solid",
+                        "borderWidth": "0px",
+                        "color": "#FFFFFF",
+                        "elementClass": "",
+                        "fontSize": "14px",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                        "labelClass": "",
+                        "textAlign": "center",
+                        "width": "100%"
+                    },
+                    "outerStyles": {
+                        "marginBottom": "12px",
+                        "marginLeft": "0",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "paddingBottom": "0",
+                        "paddingLeft": "0",
+                        "paddingRight": "0",
+                        "paddingTop": "0",
+                        "width": "100%"
+                    },
+                    "since": 0,
+                    "tooltip": ""
+                }
+            ],
+            "id": "PANE_1",
+            "innerStyles": {
+                "backgroundColor": "rgba(255, 255, 255, 1)",
+                "backgroundImage": "",
+                "borderColor": "#333",
+                "borderRadius": "0px",
+                "borderStyle": "solid",
+                "borderWidth": "0px",
+                "color": "#333333",
+                "fontSize": "13px",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "textAlign": "left"
+            },
+            "validation": {
+                "asYouGo": true,
+                "errorMessage": "Please see errors above before continuing.",
+                "snippet": "",
+                "usingSnippet": false
+            }
+        },
+        {
+            "allowDismiss": false,
+            "elementList": [
+                {
+                    "actionList": [
+                    ],
+                    "detail": {
+                        "generatedHtml": "<p>감사합니다.\n설문이 완료되었습니다.\n창을 닫으면 다시 챗봇으로 돌아갑니다.</p>\n",
+                        "text": "감사합니다.\n설문이 완료되었습니다.\n창을 닫으면 다시 챗봇으로 돌아갑니다.",
+                        "type": "markdown"
+                    },
+                    "id": "label_1",
+                    "initiallyEnabled": true,
+                    "initiallyVisible": true,
+                    "innerStyles": {
+                        "backgroundColor": "rgba(255, 255, 255, 0)",
+                        "backgroundImage": "",
+                        "borderColor": "#333",
+                        "borderRadius": "0px",
+                        "borderStyle": "solid",
+                        "borderWidth": "0px",
+                        "color": "#333333",
+                        "elementClass": "",
+                        "fontSize": "13px",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                        "labelClass": "",
+                        "textAlign": "left"
+                    },
+                    "outerStyles": {
+                        "marginBottom": "12px",
+                        "marginLeft": "0",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "paddingBottom": "0",
+                        "paddingLeft": "0",
+                        "paddingRight": "0",
+                        "paddingTop": "0",
+                        "width": "100%"
+                    },
+                    "since": 0,
+                    "tooltip": ""
+                }
+            ],
+            "id": "PANE_2",
+            "innerStyles": {
+                "backgroundColor": "rgba(255, 255, 255, 1)",
+                "backgroundImage": "",
+                "borderColor": "#333",
+                "borderRadius": "0px",
+                "borderStyle": "solid",
+                "borderWidth": "0px",
+                "color": "#333333",
+                "fontSize": "13px",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "textAlign": "left"
+            },
+            "validation": {
+                "asYouGo": true,
+                "errorMessage": "Please see errors above before continuing.",
+                "snippet": "",
+                "usingSnippet": false
+            }
+        }
+    ],
+    "externalDataList": [
+        {
+            "allowWrite": false,
+            "id": "onDone",
+            "path": "onDone",
+            "prefetch": true,
+            "source": "param"
+        }
+    ],
+    "general": {
+        "author": "Unknown",
+        "created": "Mon Apr 08 2019",
+        "icon": "https://cdn.tetrapod.io/chatbox/template-images/cb2/customer_survey.png",
+        "internalDescription": "Get feedback from your customers and collect email to follow up on their experience",
+        "inviteMessageList": [
+            "Click to take the survey {link}"
+        ],
+        "name": "survey",
+        "previewIcon": "https://cdn.tetrapod.io/chatbox/template-assets/your_logo_here.png",
+        "previewText": "Survey"
+    },
+    "snippetList": [
+    ],
+    "version": 7
+}
