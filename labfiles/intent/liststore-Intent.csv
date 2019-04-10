@@ -1,0 +1,7 @@
+query,topIntent
+"매장은 어디있나요?",listStore
+"영업점 위치가 어디예요",listStore
+"삼성동에 지점이 있나요",listStore
+"가게 위치를 알고 싶어요",listStore
+"가까운 영업점 위치를 알고 싶네요",listStore
+"지점 정보 알려주세요",listStore
